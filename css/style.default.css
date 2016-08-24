@@ -1039,3 +1039,31 @@ p.pic{
   margin-top: 5px;
   font-size: 13px;
 }
+
+#scrolldown{
+  text-align: center;
+  font-size: 10px;
+  font-weight: 200px;
+  opacity: 0.7;
+}
+
+p.arrow {
+  text-align: center;
+  margin-top: 20px;
+  color:#fff;
+  opacity: 0.6;
+}
+
+p.arrow a{
+  text-align: center;
+  margin-top: 20px;
+  color:#fff;
+}
+
+p.arrow {
+  text-align: center;
+  margin-top: 20px;
+  color:#fff;
+}
+
+
