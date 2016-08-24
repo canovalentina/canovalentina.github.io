@@ -1,14 +1,16 @@
 html {
   height: 100%;
 }
-body {
-  height: 100%;
-}
 
 body:before {
     content: url('../img/caracas.jpg');
     display:none;
 }
+
+body {
+  height: 100%;
+}
+
 .italic {
   font-style: italic;
 }
