@@ -4,9 +4,15 @@ html {
 body {
   height: 100%;
 }
+
+body:before {
+    content: url('../img/caracas.jpg');
+    display:none;
+}
 .italic {
   font-style: italic;
 }
+
 .intro {
   position: relative;
   width: 100%;
@@ -16,6 +22,7 @@ body {
   min-height: 600px;
   padding: 0;
   background-size: cover;
+  background-image: url('../img/caracas.jpg');
   background-position: center center;
   overflow: hidden;
   background-attachment: fixed;
