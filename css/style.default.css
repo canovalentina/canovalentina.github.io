@@ -1067,12 +1067,19 @@ p.arrow a{
   text-align: center;
   margin-top: 20px;
   color:#fff;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 p.arrow {
   text-align: center;
   margin-top: 20px;
   color:#fff;
+}
+
+p.arrow a:hover{
+  color: #aaa;
 }
 
 
