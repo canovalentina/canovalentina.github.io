@@ -47,16 +47,21 @@ body {
 .intro a {
   color: #fff;
   text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  font-size: 17px; 
 }
 .intro a:hover,
 .intro a:focus {
   color: #fff;
   text-decoration: underline;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  font-size: 17px; 
 }
 .intro a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
+  font-size: 17px; 
 }
 
 @media (min-width: 992px) {
