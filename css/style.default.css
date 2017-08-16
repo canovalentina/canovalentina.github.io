@@ -183,6 +183,11 @@ p.social a.github {
 p.social a.instagram {
   background-color: #aaa;
 }
+
+p.social a.twitter {
+  background-color: #aaa;
+}
+
 p.social a.email {
   background-color: #aaa;
 }
@@ -205,6 +210,10 @@ p.social a.github:hover {
 
 p.social a.instagram:hover {
   background-color: #cd486b;
+}
+
+p.social a.twitter:hover {
+  background-color: #1dcaff;
 }
 
 p.social a.email:hover {
@@ -264,6 +273,7 @@ NAVBAR
   -moz-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
+
 .navbar-header {
   position: relative;
   z-index: 1004;
