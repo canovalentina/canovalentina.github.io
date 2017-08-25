@@ -217,6 +217,10 @@ p.social a.resume {
   background-color: #aaa;
 }
 
+p.social a.spotify {
+  background-color: #aaa;
+}
+
 p.social a.facebook:hover {
   background-color: #3b5998;
 }
@@ -243,6 +247,10 @@ p.social a.email:hover {
 
 p.social a.resume:hover {
   background-color: #33ccff;
+}
+
+p.social a.spotify: hover {
+  background-color: #1ed760
 }
 
 .copyright {
