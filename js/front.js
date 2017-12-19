@@ -50,8 +50,9 @@ function map() {
     map = new GMaps({
         el: '#map',
         //caracas picholera: 10.508846, -66.843392
-        lat: 10.508846,
-        lng: -66.843392,
+        //69 brown: 41.827526, -71.40311
+        lat: 41.827526,
+        lng: -71.40311,
         zoomControl: true,
         zoomControlOpt: {
             style: 'SMALL',
@@ -69,12 +70,12 @@ function map() {
     var image = 'img/marker.png';
 
     map.addMarker({
-        lat: 10.508846,
-        lng: -66.843392,
+        lat: 41.827526,
+        lng: -71.40311,
         icon: image,
         title: '',
         infoWindow: {
-            content: '<p>My home in Caracas, Venezuela.<br>Los Palos Grandes, 9 Transversal, Qta. Picholera.</p>'
+            content: '<p>69 Brown Street. Box 5842 <br>Providence, RI. 02912</p>'
         }
     });
 }
