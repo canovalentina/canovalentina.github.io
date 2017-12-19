@@ -67,7 +67,7 @@ function map() {
         styles: styles
     });
 
-    var image = 'img/marker.png';
+    var image = 'img/bluemarker.png';
 
     map.addMarker({
         lat: 41.827526,
