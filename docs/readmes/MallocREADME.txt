@@ -1,4 +1,6 @@
-README- Code sent upon request
+README
+Private repo at https://github.com/canovalentina/malloc 
+Code shared upon request
 
 Student: Valentina Cano (vcano)
 Project: 

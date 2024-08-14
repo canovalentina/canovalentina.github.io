@@ -1,4 +1,6 @@
-README- Code sent upon request
+README
+Private repo at https://github.com/canovalentina/autocorrect 
+Code shared upon request
 
 Project: Autocorrect
 Student: vcano
