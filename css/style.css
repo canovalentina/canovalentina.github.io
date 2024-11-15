@@ -15,6 +15,10 @@ h1 {
   margin-left: 0.08em;
 }
 
+h2 {
+  margin-left: 0.08em;
+}
+
 h3 {
   margin-left: 0.08em;
 }
@@ -44,6 +48,14 @@ h1 {
   font-variant: normal;
   font-weight: 700;
   line-height: 26.4px;
+}
+h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
 }
 h3 {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -109,4 +121,8 @@ a.title {
 
 a.about {
   font-weight: 400;
+}
+
+a.subtitle {
+  font-weight: 700;
 }
