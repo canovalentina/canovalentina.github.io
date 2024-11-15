@@ -66,6 +66,10 @@ p a:hover {
 Mobile
 */
 @media (max-width: 768px) {
+  body {
+    margin-left: 0.5rem;
+    padding: 1rem;
+  }
   h1 {
     max-width: 15rem;
   }
