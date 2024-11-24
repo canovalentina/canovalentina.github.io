@@ -77,6 +77,10 @@ p a:hover {
   color: tomato;
 }
 
+.project img {
+  max-width: 50%;
+}
+
 /*
 Mobile
 */
@@ -87,6 +91,10 @@ Mobile
   }
   h1 {
     max-width: 15rem;
+  }
+
+  .project img {
+    max-width: 75%;
   }
 }
 
