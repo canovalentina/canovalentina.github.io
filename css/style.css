@@ -79,6 +79,12 @@ p a:hover {
 
 .project img {
   max-width: 50%;
+  padding: 0.5rem;
+}
+
+#border img {
+  border: 5px solid black;
+  border-radius: 15px;
 }
 
 /*
