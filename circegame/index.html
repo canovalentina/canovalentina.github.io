@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Unity WebGL Player | Baobab_Circe</title>
+    <title>Unity WebGL Player | Circe</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico" />
     <link rel="stylesheet" href="TemplateData/style.css" />
   </head>
@@ -84,6 +84,17 @@
       canvas.style.width = '1366px';
       canvas.style.height = '768px';
 
+      // Prevent spacebar from triggering page actions
+      window.addEventListener(
+        'keydown',
+        function (e) {
+          if (e.code === 'Space' || e.key === ' ') {
+            e.preventDefault();
+          }
+        },
+        false
+      );
+
       // By default, Unity keeps WebGL canvas render target size matched with
       // the DOM size of the canvas element (scaled by window.devicePixelRatio)
       // Set this to false if you want to decouple this synchronization from
@@ -133,6 +144,8 @@
         })
           .then(unityInstance => {
             loadingBar.style.display = 'none';
+            canvas.tabIndex = 1;
+            canvas.focus();
             // fullscreenButton.onclick = () => {
             //   unityInstance.SetFullscreen(1);
             // };
