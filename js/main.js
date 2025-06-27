@@ -1,3 +1,5 @@
+// main.js
+
 //menu
 toggle = document.querySelectorAll('.toggle')[0];
 nav = document.querySelectorAll('nav')[0];
