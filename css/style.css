@@ -297,6 +297,61 @@ body.dark-mode .contact-list a:hover {
   display: inline-block;
 }
 
+.icon-right {
+  margin-left: 0.4rem;
+  margin-right: 0;
+  transition: color 0.2s ease;
+  opacity: 0.5;
+  color: #666;
+}
+
+/* Skill/credential tags */
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 4px;
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--color-text);
+  opacity: 0.8;
+}
+
+body.dark-mode .tag {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.tag-action {
+  background: rgba(255, 99, 71, 0.15);
+  color: tomato;
+  opacity: 1;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.tag-action:hover {
+  background: rgba(255, 99, 71, 0.25);
+  color: tomato;
+  transform: translateY(-1px);
+}
+
+.tag-action i {
+  margin-right: 0.3rem;
+}
+
+body.dark-mode .tag-action {
+  background: rgba(255, 99, 71, 0.2);
+}
+
+body.dark-mode .tag-action:hover {
+  background: rgba(255, 99, 71, 0.35);
+}
+
 a:hover .icon,
 a:focus-visible .icon {
   color: var(--color-hover);
@@ -471,7 +526,7 @@ nav.top-right {
 /* Project/Paper cards */
 .card {
   padding: 0.5rem 0.75rem;
-  margin: 0.25rem 0;
+  margin: 0.4rem 0;
   border-radius: 6px;
   transition: background-color 0.2s ease;
 }
