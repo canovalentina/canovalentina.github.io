@@ -327,15 +327,15 @@ body.dark-mode .tag {
 }
 
 .tag-action {
-  background: rgba(255, 99, 71, 0.15);
-  color: tomato;
+  background: rgba(0, 0, 0, 0.08);
+  color: #555;
   opacity: 1;
   text-decoration: none;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
 .tag-action:hover {
-  background: rgba(255, 99, 71, 0.25);
+  background: rgba(255, 99, 71, 0.2);
   color: tomato;
   transform: translateY(-1px);
 }
@@ -345,11 +345,13 @@ body.dark-mode .tag {
 }
 
 body.dark-mode .tag-action {
-  background: rgba(255, 99, 71, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: #aaa;
 }
 
 body.dark-mode .tag-action:hover {
-  background: rgba(255, 99, 71, 0.35);
+  background: rgba(255, 99, 71, 0.3);
+  color: tomato;
 }
 
 a:hover .icon,
