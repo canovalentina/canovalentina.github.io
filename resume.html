@@ -1,21 +1,38 @@
 <!-- resume.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Valentina Cano Arcay</title>
-    <meta name="description" content="Personal website" />
+    <title>Valentina Cano Arcay — Resume</title>
+    <meta name="description" content="Valentina Cano Arcay — Resume and work experience." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Valentina Cano Arcay — Resume" />
+    <meta property="og:description" content="Resume and work experience." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://canovalentina.com/resume.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#ffc00e" />
 
     <!-- CSS stylesheet-->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Favicon-->
     <link rel="shortcut icon" href="images/flowers.png" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <!-- Menu. Credit to: https://codepen.io/the_mai10*/ -->
-    <nav class="top-right open">
+    <nav class="top-right open" aria-label="Main navigation">
       <a class="disc l1" href="resume.html">
         <div>resume</div>
       </a>
@@ -25,98 +42,115 @@
       <a class="disc l4" href="projects.html">
         <div>projects</div>
       </a>
-      <a class="disc l5 toggle"> menu </a>
+      <a class="disc l5 toggle" aria-expanded="true"> menu </a>
     </nav>
     <!-- end menu -->
 
-    <div>
+    <header>
       <h1>
         <a href="index.html">Valentina Cano Arcay</a>
       </h1>
-    </div>
+    </header>
 
-    <div class="links-container">
-      <p>
-        Download PDF:
+    <main id="main">
+      <section aria-labelledby="work-heading">
+        <h2 id="work-heading">Work Experience</h2>
+
+        <div class="card">
+          <h4>
+            <a href="https://www.inno-it.es/" target="_blank" rel="noopener noreferrer"
+              >InnoIT</a
+            >
+          </h4>
+          <p>AI Engineer, <a href="https://alexion.com/" target="_blank" rel="noopener noreferrer"
+            >AstraZeneca Rare Disease</a
+          >, March 2025 - present.</p>
+
+          <h4>
+            <a href="https://esourcecapital.com/" target="_blank" rel="noopener noreferrer"
+              >eSource Capital</a
+            >
+          </h4>
+          <p>Software Engineer, October 2023 - February 2025.</p>
+
+          <h4><a href="https://www.disneyplus.com/" target="_blank" rel="noopener noreferrer">Disney+</a></h4>
+          <p>Data Analyst, January 2020 - August 2023.</p>
+
+          <h4><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Meta</a></h4>
+          <p>Data Science Intern, Facebook, Summer 2016 and Summer 2018.</p>
+
+          <h4>
+            <a href="http://cs.brown.edu/" target="_blank" rel="noopener noreferrer"
+              >Brown University Computer Science</a
+            >
+          </h4>
+          <p>
+            Research Assistant,
+            <a href="https://hci.brown.edu/" target="_blank" rel="noopener noreferrer">HCI Lab</a>,
+            January–June 2018.
+            <br />
+            Teaching Assistant,
+            <a href="https://cs.brown.edu/courses/cs015/" target="_blank" rel="noopener noreferrer"
+              >Intro to OOP in Java</a
+            >, August–December 2015.
+          </p>
+        </div>
+      </section>
+
+      <section aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        
+        <div class="card">
+          <h4>
+            <a href="https://gatech.edu/" target="_blank" rel="noopener noreferrer"
+              >Georgia Institute of Technology</a
+            >
+          </h4>
+          <p>
+            <a href="https://omscs.gatech.edu/" target="_blank" rel="noopener noreferrer"
+              >Master of Science in Computer Science (OMSCS)</a
+            >, started in Fall 2024.
+          </p>
+
+          <h4>
+            <a href="https://www.brown.edu/" target="_blank" rel="noopener noreferrer">Brown University</a>
+          </h4>
+          <p>
+            B.A. <a href="http://cs.brown.edu/" target="_blank" rel="noopener noreferrer">Computer Science</a>
+            &
+            <a href="https://watson.brown.edu/ds/" target="_blank" rel="noopener noreferrer"
+              >International Development Studies</a
+            >, Class of 2019.
+          </p>
+        </div>
+      </section>
+
+      <div class="links-container download-links">
         <a
           id="resume-english"
           href="docs/resumes/Valentina_Cano_Resume_English.pdf"
           target="_blank"
-          >[English version]</a
+          rel="noopener noreferrer"
+          ><i class="fa-solid fa-download icon"></i><span class="link-text">English version (PDF)</span></a
         >
         <a
           id="resume-spanish"
           href="docs/resumes/Valentina_Cano_CV_en_Espanol.pdf"
           target="_blank"
-          >[Spanish version]</a
+          rel="noopener noreferrer"
+          ><i class="fa-solid fa-download icon"></i><span class="link-text">Spanish version (PDF)</span></a
         >
-      </p>
-    </div>
+      </div>
+    </main>
 
-    <div>
-      <h2>Work Experience</h2>
+    <footer>
+      <p>© <span id="year"></span> vca</p>
+    </footer>
 
-      <h4>
-        <a href="https://alexion.com/" target="_blank"
-          >InnoIT, AstraZeneca Rare Disease</a
-        >
-      </h4>
-      <p>AI Engineer, March 2025 - present.</p>
-
-      <h4>
-        <a href="https://esourcecapital.com/" target="_blank"
-          >eSource Capital</a
-        >
-      </h4>
-      <p>Software Engineer, October 2023 - February 2025.</p>
-
-      <h4><a href="https://www.disneyplus.com/" target="_blank">Disney+</a></h4>
-      <p>Data Analyst, January 2020 - August 2023.</p>
-
-      <h4><a href="https://www.facebook.com/">Meta</a></h4>
-      <p>Data Science Intern, Facebook, Summer 2016 and Summer 2018.</p>
-
-      <h4>
-        <a href="http://cs.brown.edu/" target="_blank"
-          >Brown University Computer Science</a
-        >
-      </h4>
-      <p>
-        Research Assistant,
-        <a href="https://hci.brown.edu/" target="_blank">HCI Lab</a>,
-        January–June 2018.
-        <br />
-        Teaching Assistant,
-        <a href="https://cs.brown.edu/courses/cs015/" target="_blank"
-          >Intro to OOP in Java</a
-        >, August–December 2015.
-      </p>
-    </div>
-
-    <div>
-      <h2>Education</h2>
-      <h4>
-        <a href="https://gatech.edu/" target="_blank"
-          >Georgia Institute of Technology</a
-        >
-      </h4>
-      <p>
-        <a href="https://omscs.gatech.edu/" target="_blank"
-          >Master of Science in Computer Science (OMSCS)</a
-        >, started in Fall 2024.
-      </p>
-
-      <h4>
-        <a href="https://www.brown.edu/" target="_blank">Brown University</a>
-      </h4>
-      <p>
-        B.A. <a href="http://cs.brown.edu/" target="_blank">Computer Science</a>
-        &
-        <a href="https://watson.brown.edu/ds/" target="_blank"
-          >International Development Studies</a
-        >, Class of 2019.
-      </p>
-    </div>
+    <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+      <span class="toggle-option light-option active"><i class="fa-solid fa-sun"></i></span>
+      <span class="toggle-option dark-option"><i class="fa-solid fa-moon"></i></span>
+    </button>
 
     <script src="js/main.js"></script>
   </body>

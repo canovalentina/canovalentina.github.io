@@ -1,21 +1,38 @@
 <!-- projects.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Valentina Cano Arcay</title>
-    <meta name="description" content="Personal website" />
+    <title>Valentina Cano Arcay — Projects</title>
+    <meta name="description" content="Valentina Cano Arcay — Projects and portfolio." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Valentina Cano Arcay — Projects" />
+    <meta property="og:description" content="Projects and portfolio." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://canovalentina.com/projects.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#ffc00e" />
 
     <!-- CSS stylesheet-->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Favicon-->
     <link rel="shortcut icon" href="images/flowers.png" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <!-- Menu. Credit to: https://codepen.io/the_mai10*/ -->
-    <nav class="top-right open">
+    <nav class="top-right open" aria-label="Main navigation">
       <a class="disc l1" href="resume.html">
         <div>resume</div>
       </a>
@@ -25,44 +42,48 @@
       <a class="disc l4" href="projects.html">
         <div>projects</div>
       </a>
-      <a class="disc l5 toggle"> menu </a>
+      <a class="disc l5 toggle" aria-expanded="true"> menu </a>
     </nav>
     <!-- end menu -->
 
-    <div>
+    <header>
       <h1>
         <a href="index.html">Valentina Cano Arcay</a>
       </h1>
-    </div>
+    </header>
 
-    <div>
+    <main id="main">
       <h2>Projects</h2>
 
-      <h4>
-        <a href="https://www.pregsafe.org/" target="_blank"
-          >Pregnancy Medication Checker</a
-        >
-      </h4>
-      <p>
-        Full-stack web app that helps support safe medication and supplement use
-        during pregnancy and breastfeeding, connecting a FHIR server to multiple
-        medical databases.
-        <br />
-        Test credentials: <i>provider, provider123; patient, patient123</i>
-        <br />
-        Skills: <i>Python, Typescript, HTML</i>
-      </p>
+      <div class="card">
+        <h4>
+          <a href="https://www.pregsafe.org/" target="_blank" rel="noopener noreferrer"
+            >Pregnancy Medication Checker</a
+          >
+        </h4>
+        <p>
+          Full-stack web app that helps support safe medication and supplement use
+          during pregnancy and breastfeeding, connecting a FHIR server to multiple
+          medical databases.
+          <br />
+          Test credentials: <i>provider, provider123; patient, patient123</i>
+          <br />
+          Skills: <i>Python, Typescript, HTML</i>
+        </p>
+      </div>
 
-      <h4>
-        <a href="https://canovalentina.com/circegame/" target="_blank">Circe</a>
-      </h4>
-      <p>
-        3-D adventure video game based on the story of the Greek goddess Circe
-        (see
-        <a href="https://youtu.be/8AGJCi6DEIE" target="_blank">trailer</a>).
-        <br />
-        Skills: <i>C#, Unity</i>
-      </p>
+      <div class="card">
+        <h4>
+          <a href="https://canovalentina.com/circegame/" target="_blank" rel="noopener noreferrer">Circe</a>
+        </h4>
+        <p>
+          3-D adventure video game based on the story of the Greek goddess Circe
+          (see
+          <a href="https://youtu.be/8AGJCi6DEIE" target="_blank" rel="noopener noreferrer">trailer</a>).
+          <br />
+          Skills: <i>C#, Unity</i>
+        </p>
+      </div>
     <!-- 
       <h4>
         <a href="jobcompare.html" target="_blank">Job Compare</a>
@@ -100,25 +121,29 @@
         Skills: <i>Python, GCP</i>
       </p> -->
 
-      <h4><a href="https://www.freyes.co/" target="_blank">frey_s</a></h4>
-      <p>
-        Simple website to showcase the work of interdisciplinary artist frey_s.
-        <br />
-        Skills: <i>HTML, CSS</i>
-      </p>
+      <div class="card">
+        <h4><a href="https://www.freyes.co/" target="_blank" rel="noopener noreferrer">frey_s</a></h4>
+        <p>
+          Simple website to showcase the work of interdisciplinary artist frey_s.
+          <br />
+          Skills: <i>HTML, CSS</i>
+        </p>
+      </div>
 
-      <h4>
-        <a href="http://sochiatrist.cs.brown.edu/" target="_blank"
-          >Sochiatrist</a
-        >
-      </h4>
-      <p>
-        Research Assistant for the Brown Human Computer Interaction group, on a
-        project that works on predicting mental health issues from
-        naturally-occurring social and health-tracking data.
-        <br />
-        Skills: <i>Python</i>
-      </p>
+      <div class="card">
+        <h4>
+          <a href="http://sochiatrist.cs.brown.edu/" target="_blank" rel="noopener noreferrer"
+            >Sochiatrist</a
+          >
+        </h4>
+        <p>
+          Research Assistant for the Brown Human Computer Interaction group, on a
+          project that works on predicting mental health issues from
+          naturally-occurring social and health-tracking data.
+          <br />
+          Skills: <i>Python</i>
+        </p>
+      </div>
 
       <!-- <h4>
         <a href="tetris.html" target="_blank">Tetris</a>
@@ -130,18 +155,20 @@
         Skills: <i>Java</i>
       </p> -->
 
-      <h4>
-        <a href="https://robotsvalentina-blog.tumblr.com/" target="_blank"
-          >Anxi</a
-        >
-      </h4>
-      <p>
-        Mental health intervention with a pulse sensor, mood light orb and
-        emergency-button watch that promotes mindfulness and provides help for
-        anxiety disorders.
-        <br />
-        Skills: <i>Arduino, Rhino 3D</i>
-      </p>
+      <div class="card">
+        <h4>
+          <a href="https://robotsvalentina-blog.tumblr.com/" target="_blank" rel="noopener noreferrer"
+            >Anxi</a
+          >
+        </h4>
+        <p>
+          Mental health intervention with a pulse sensor, mood light orb and
+          emergency-button watch that promotes mindfulness and provides help for
+          anxiety disorders.
+          <br />
+          Skills: <i>Arduino, Rhino 3D</i>
+        </p>
+      </div>
 
       <!-- <h4>
         <a
@@ -157,18 +184,20 @@
         Skills: <i>Adobe Illustrator</i>
       </p> -->
 
-      <h4>
-        <a href="https://m8ztqk.axshare.com/#p=login" target="_blank"
-          >Distributors Portal</a
-        >
-      </h4>
-      <p>
-        New route and territory planning software for small distributors in
-        Latin America to be able to visualize enterprise supply chain management
-        software. Initial wireframe available in the link.
-        <br />
-        Skills: <i>Java</i>
-      </p>
+      <div class="card">
+        <h4>
+          <a href="https://m8ztqk.axshare.com/#p=login" target="_blank" rel="noopener noreferrer"
+            >Distributors Portal</a
+          >
+        </h4>
+        <p>
+          New route and territory planning software for small distributors in
+          Latin America to be able to visualize enterprise supply chain management
+          software. Initial wireframe available in the link.
+          <br />
+          Skills: <i>Java</i>
+        </p>
+      </div>
 
       <!-- <h4>
         <a href="docs/readmes/AutocorrectREADME.txt" target="_blank"
@@ -214,7 +243,17 @@
         <br />
         Skills: <i>Java</i>
       </p> -->
-    </div>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> vca</p>
+    </footer>
+
+    <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+      <span class="toggle-option light-option active"><i class="fa-solid fa-sun"></i></span>
+      <span class="toggle-option dark-option"><i class="fa-solid fa-moon"></i></span>
+    </button>
+
     <script src="js/main.js"></script>
   </body>
 </html>

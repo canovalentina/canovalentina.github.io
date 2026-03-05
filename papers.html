@@ -1,21 +1,38 @@
 <!-- papers.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Valentina Cano Arcay</title>
-    <meta name="description" content="Personal website" />
+    <title>Valentina Cano Arcay — Papers</title>
+    <meta name="description" content="Valentina Cano Arcay — Academic papers and research." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Valentina Cano Arcay — Papers" />
+    <meta property="og:description" content="Academic papers and research." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://canovalentina.com/papers.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#ffc00e" />
 
     <!-- CSS stylesheet-->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Favicon-->
     <link rel="shortcut icon" href="images/flowers.png" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <!-- Menu. Credit to: https://codepen.io/the_mai10*/ -->
-    <nav class="top-right open">
+    <nav class="top-right open" aria-label="Main navigation">
       <a class="disc l1" href="resume.html">
         <div>resume</div>
       </a>
@@ -25,36 +42,39 @@
       <a class="disc l4" href="projects.html">
         <div>projects</div>
       </a>
-      <a class="disc l5 toggle"> menu </a>
+      <a class="disc l5 toggle" aria-expanded="true"> menu </a>
     </nav>
     <!-- end menu -->
 
-    <div>
+    <header>
       <h1>
         <a href="index.html">Valentina Cano Arcay</a>
       </h1>
-    </div>
+    </header>
 
-    <div>
+    <main id="main">
       <h2>Papers</h2>
 
-      <h4>
-        <a
-          href="docs/papers/DenialRacismCapstoneValentinaCano.pdf"
-          target="_blank"
-          >Historical Narratives of Denial of Racism and the Impact of Hugo
-          Chávez on Racial Discourse in Venezuela
-        </a>
-      </h4>
-      <p>
-        This paper aims to examine several narratives that have perpetuated the
-        denial of racism throughout Venezuelan history, analyze the impact of
-        President Hugo Chávez's discourse and policy implementation in regards
-        to racial inequality, and emphasize the importance of addressing the
-        topic of race in Venezuela. This research was conducted as my final
-        Capstone project for the International Development Studies major at
-        Brown.
-      </p>
+      <div class="card">
+        <h4>
+          <a
+            href="docs/papers/DenialRacismCapstoneValentinaCano.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Historical Narratives of Denial of Racism and the Impact of Hugo
+            Chávez on Racial Discourse in Venezuela
+          </a>
+        </h4>
+        <p>
+          This paper aims to examine several narratives that have perpetuated the
+          denial of racism throughout Venezuelan history, analyze the impact of
+          President Hugo Chávez's discourse and policy implementation in regards
+          to racial inequality, and emphasize the importance of addressing the
+          topic of race in Venezuela. This research was conducted as my final
+          Capstone project for the International Development Studies major at
+          Brown.
+        </p>
+      </div>
 
       <!-- <h4>
         <a href="docs/papers/ClientelismFoodValentinaCano.pdf" target="_blank"
@@ -71,32 +91,36 @@
         the most vulnerable population of Venezuela.
       </p> -->
 
-      <h4>
-        <a href="docs/papers/PersonhoodHicksValentinaCano.pdf" target="_blank"
-          >Coping with Personhood through the Illustrations of Carolina Hicks:
+      <div class="card">
+        <h4>
+          <a href="docs/papers/PersonhoodHicksValentinaCano.pdf" target="_blank" rel="noopener noreferrer"
+            >Coping with Personhood through the Illustrations of Carolina Hicks:
           An Exploration of Latinidad, Identity, Trauma Healing, and Third World
           Feminism</a
         >
-      </h4>
-      <p>
-        This paper explores the ways in which Carolina Hick's illustrations and
-        personal experiences fall into the project of Third World Feminism,
-        through Gloria Anzaldúa's concept of nepantla, Audre Lorde's analysis of
-        the erotic, and Juana María Rodríguez's notions of queer latinidad.
-      </p>
+        </h4>
+        <p>
+          This paper explores the ways in which Carolina Hick's illustrations and
+          personal experiences fall into the project of Third World Feminism,
+          through Gloria Anzaldúa's concept of nepantla, Audre Lorde's analysis of
+            the erotic, and Juana María Rodríguez's notions of queer latinidad.
+        </p>
+      </div>
 
-      <h4>
-        <a href="docs/papers/FeminicideGalindoValentinaCano.pdf" target="_blank"
-          >¿Qué dirán de mí si un día aparezco muerta?: Feminicide, Latinidad,
-          and State Violence from the lens of Regina José Galindo</a
-        >
-      </h4>
-      <p>
-        In this paper I examine the work of Guatemalan artist Regina José
-        Galindo, in conversation with the definition of feminicide that Rosa
-        Linda Fregoso and Cynthia Bejarano present in A Cartography of
-        Feminicide in the Américas.
-      </p>
+      <div class="card">
+        <h4>
+          <a href="docs/papers/FeminicideGalindoValentinaCano.pdf" target="_blank" rel="noopener noreferrer"
+            >¿Qué dirán de mí si un día aparezco muerta?: Feminicide, Latinidad,
+            and State Violence from the lens of Regina José Galindo</a
+          >
+        </h4>
+        <p>
+          In this paper I examine the work of Guatemalan artist Regina José
+          Galindo, in conversation with the definition of feminicide that Rosa
+          Linda Fregoso and Cynthia Bejarano present in A Cartography of
+          Feminicide in the Américas.
+        </p>
+      </div>
 
       <!-- <h4>
         <a
@@ -206,7 +230,17 @@
           out to me.</i
         >
       </p> -->
-    </div>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> vca</p>
+    </footer>
+
+    <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+      <span class="toggle-option light-option active"><i class="fa-solid fa-sun"></i></span>
+      <span class="toggle-option dark-option"><i class="fa-solid fa-moon"></i></span>
+    </button>
+
     <script src="js/main.js"></script>
   </body>
 </html>

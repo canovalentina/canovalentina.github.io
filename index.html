@@ -1,12 +1,19 @@
 <!-- index.html -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Valentina Cano Arcay</title>
-    <meta name="description" content="Personal website" />
+    <title>Valentina Cano Arcay — About</title>
+    <meta name="description" content="Valentina Cano Arcay — Software engineer, Georgia Tech OMSCS, AI Engineer at AstraZeneca." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Valentina Cano Arcay" />
+    <meta property="og:description" content="Software engineer, Georgia Tech OMSCS, AI Engineer at AstraZeneca." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://canovalentina.com/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#ffc00e" />
 
     <!-- CSS stylesheet-->
     <link rel="stylesheet" href="css/style.css" />
@@ -19,10 +26,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <!-- Menu. Credit to: https://codepen.io/the_mai10*/ -->
-    <nav class="top-right open">
+    <nav class="top-right open" aria-label="Main navigation">
       <a class="disc l1" href="resume.html">
         <div>resume</div>
       </a>
@@ -32,56 +42,61 @@
       <a class="disc l4" href="projects.html">
         <div>projects</div>
       </a>
-      <a class="disc l5 toggle"> menu </a>
+      <a class="disc l5 toggle" aria-expanded="true"> menu </a>
     </nav>
     <!-- end menu -->
 
-    <div>
+    <header>
       <h1>
         <a href="index.html">Valentina Cano Arcay</a>
       </h1>
-    </div>
+    </header>
 
-    <div>
-      <h2>About</h2>
+    <main id="main">
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <div class="card card-flush">
+          <p>
+            Hi! I'm Valentina, a Venezuelan software engineer based in Barcelona,
+            Spain. I'm currently pursuing my Master's in Computer Science through
+            <a href="https://gatech.edu/" target="_blank" rel="noopener noreferrer">Georgia Tech</a>'s
+            part-time
+            <a href="https://omscs.gatech.edu/" target="_blank" rel="noopener noreferrer">OMSCS program</a>,
+            and working as an AI Engineer.
+            I completed my undergrad at
+            <a href="https://www.brown.edu/" target="_blank" rel="noopener noreferrer">Brown University</a>
+            where I studied
+            <a href="http://cs.brown.edu/" target="_blank" rel="noopener noreferrer">Computer Science</a>
+            and
+            <a href="https://watson.brown.edu/ds/" target="_blank" rel="noopener noreferrer"
+              >International Development Studies</a
+            >. This website includes my resume and work history, along with some
+            papers and projects I've worked on over the years! You can reach out to
+            me at <a href="mailto:vcanoarcay@gmail.com">vcanoarcay@gmail.com</a>.
+          </p>
+        </div>
+      </section>
 
-      <p>
-        Hi! I'm Valentina, a Venezuelan software engineer based in Barcelona,
-        Spain. I'm currently pursuing my Master's in Computer Science through
-        <a href="https://gatech.edu/" target="_blank">Georgia Tech</a>'s
-        part-time
-        <a href="https://omscs.gatech.edu/" target="_blank">OMSCS program</a>,
-        and working as an AI Engineer on a project at
-        <a href="https://www.astrazeneca.com/" target="_blank">AstraZeneca</a>.
-        I completed my undergrad at
-        <a href="https://www.brown.edu/" target="_blank">Brown University</a>
-        where I studied
-        <a href="http://cs.brown.edu/" target="_blank">Computer Science</a>
-        and
-        <a href="https://watson.brown.edu/ds/" target="_blank"
-          >International Development Studies</a
-        >. This website includes my resume and work history, along with some
-        papers and projects I've worked on over the years! You can reach out to
-        me at <a href="mailto:vcanoarcay@gmail.com">vcanoarcay@gmail.com</a>.
-      </p>
-    </div>
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <ul class="contact-list">
+          <li><a href="mailto:vcanoarcay@gmail.com"><i class="fa-solid fa-envelope icon"></i><span class="link-text">Email</span></a></li>
+          <li><a href="https://www.linkedin.com/in/valentinacano" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin icon"></i><span class="link-text">LinkedIn</span></a></li>
+          <li><a href="https://www.instagram.com/nanencano/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram icon"></i><span class="link-text">Instagram</span></a></li>
+          <li><a href="https://github.com/canovalentina" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github icon"></i><span class="link-text">GitHub</span></a></li>
+        </ul>
+      </section>
+    </main>
 
-    <div>
-      <h2>Contact</h2>
-      <p>
-        <a href="mailto:vcanoarcay@gmail.com"> Email</a> <br />
-        <a href="https://www.linkedin.com/in/valentinacano" target="_blank">
-          LinkedIn</a
-        >
-        <br />
-        <a href="https://www.instagram.com/nanencano/" target="_blank">
-          Instagram</a
-        >
-        <br />
+    <footer>
+      <p>© <span id="year"></span> vca</p>
+    </footer>
 
-        <a href="https://github.com/canovalentina"> GitHub</a> <br />
-      </p>
-    </div>
+    <button class="dark-mode-toggle" aria-label="Toggle dark mode">
+      <span class="toggle-option light-option active"><i class="fa-solid fa-sun"></i></span>
+      <span class="toggle-option dark-option"><i class="fa-solid fa-moon"></i></span>
+    </button>
+
     <script src="js/main.js"></script>
   </body>
 </html>

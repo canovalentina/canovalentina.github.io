@@ -1,1 +1,1 @@
-Personal Website for Valentina Cano Arcay Hosted at canovalentina.com
+Personal Website for Valentina Cano Arcay hosted at canovalentina.com
