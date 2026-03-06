@@ -799,3 +799,155 @@ body.dark-mode .dark-mode-toggle .toggle-option.active {
   background: #6366f1;
   color: #fff;
 }
+
+/* Paper content styles */
+.paper-content {
+  margin-top: 1.5rem;
+}
+
+.paper-content h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  max-width: 90%;
+}
+
+.paper-content .paper-subtitle {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+body.dark-mode .paper-content .paper-subtitle {
+  color: #999;
+}
+
+.paper-content h2 {
+  font-size: 1.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  margin-left: 0;
+}
+
+.paper-content h3 {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.paper-content p {
+  margin-left: 0;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.paper-content blockquote {
+  margin: 1.5rem 0;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid var(--color-accent);
+  background: rgba(0, 0, 0, 0.02);
+  font-style: italic;
+  border-radius: 0 6px 6px 0;
+}
+
+body.dark-mode .paper-content blockquote {
+  background: rgba(255, 255, 255, 0.03);
+  border-left-color: var(--color-accent);
+}
+
+.paper-content blockquote p {
+  margin-bottom: 0.5rem;
+}
+
+.paper-content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.paper-content img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .paper-content img {
+    max-width: 75%;
+  }
+}
+
+.paper-content .footnotes {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.85rem;
+}
+
+body.dark-mode .paper-content .footnotes {
+  border-top-color: rgba(255, 255, 255, 0.1);
+}
+
+.paper-content .footnotes ol {
+  padding-left: 1.5rem;
+}
+
+.paper-content .footnotes li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.paper-content .footnote-ref {
+  font-size: 0.75rem;
+  vertical-align: super;
+  text-decoration: none;
+  color: var(--color-accent);
+}
+
+.paper-content .footnote-ref:hover {
+  text-decoration: underline;
+}
+
+.paper-content .works-cited {
+  margin-top: 2.5rem;
+}
+
+.paper-content .works-cited h3 {
+  margin-bottom: 1rem;
+}
+
+.paper-content .works-cited ul {
+  list-style: none;
+  padding: 0;
+}
+
+.paper-content .works-cited li {
+  margin-bottom: 0.75rem;
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.back-link:hover {
+  color: var(--color-hover);
+}
+
+.back-link i {
+  margin-right: 0.4rem;
+}
+
+body.dark-mode .back-link {
+  color: #999;
+}
