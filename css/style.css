@@ -163,6 +163,10 @@ h4 a:focus-visible {
   transform: translateX(2px);
 }
 
+h4 a:active {
+  color: var(--color-link-hover);
+}
+
 p a:hover,
 p a:focus-visible {
   text-decoration: underline;
