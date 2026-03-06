@@ -717,27 +717,27 @@ body.dark-mode #border img {
 
 /* Dark mode menu colors - nighttime blue/purple */
 body.dark-mode .l1 {
-  background: linear-gradient(145deg, #6d28d9 0%, #4c1d95 50%, #3b0764 100%);
+  background: linear-gradient(145deg, #1e3a5f 0%, #1a2744 50%, #0f172a 100%);
 }
 
 body.dark-mode .l2 {
-  background: linear-gradient(145deg, #7c3aed 0%, #5b21b6 50%, #4a1d96 100%);
+  background: linear-gradient(145deg, #2d4a7c 0%, #1e3a5f 50%, #162d50 100%);
 }
 
 body.dark-mode .l3 {
-  background: linear-gradient(145deg, #6d5beb 0%, #4f46e5 50%, #4338ca 100%);
+  background: linear-gradient(145deg, #4c5b99 0%, #3b4d8c 50%, #2d3a6e 100%);
 }
 
 body.dark-mode .l4 {
-  background: linear-gradient(145deg, #6366f1 0%, #4338ca 50%, #3730a3 100%);
+  background: linear-gradient(145deg, #5b5faa 0%, #4a4e99 50%, #3b3f7a 100%);
 }
 
 body.dark-mode .l5 {
-  background: linear-gradient(145deg, #4f46e5 0%, #3730a3 50%, #2e2a7a 100%);
+  background: linear-gradient(145deg, #6366b8 0%, #5254a3 50%, #42448a 100%);
 }
 
 body.dark-mode .toggle {
-  background: linear-gradient(145deg, #818cf8 0%, #6366f1 50%, #4f46e5 100%);
+  background: linear-gradient(145deg, #7c7fd4 0%, #6366c0 50%, #5254a8 100%);
 }
 
 /* Dark mode toggle button */
