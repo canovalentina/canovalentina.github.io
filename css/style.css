@@ -587,6 +587,25 @@ nav.top-right {
 }
 /*end menu*/
 
+/* Profile photo */
+.profile-photo {
+  display: block;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 1.5rem auto 0 auto;
+  transform: translateX(-1rem);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .profile-photo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 /* Project/Paper cards */
 .card {
   padding: 0.5rem 0.75rem;
@@ -652,7 +671,9 @@ footer {
 .footer-icons a {
   color: #888;
   font-size: 1.1rem;
-  transition: color 0.2s ease, transform 0.1s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.1s ease;
 }
 
 .footer-icons a:hover,
