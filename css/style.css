@@ -596,7 +596,21 @@ nav.top-right {
   object-fit: cover;
   margin: 1.5rem auto 0 auto;
   transform: translateX(-1rem);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow:
+    inset 0 2px 4px rgba(255, 255, 255, 0.2),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.1),
+    0 6px 16px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: translateX(-1rem) scale(1.05);
+  box-shadow:
+    inset 0 2px 6px rgba(255, 255, 255, 0.3),
+    inset 0 -2px 4px rgba(0, 0, 0, 0.1),
+    0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 768px) {
@@ -624,13 +638,6 @@ nav.top-right {
 
 .card p:last-child {
   margin-bottom: 0;
-}
-
-.card-flush {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 0;
-  padding-bottom: 0;
 }
 
 .card:hover,
