@@ -53,11 +53,15 @@ toggle.addEventListener(
     nav.classList.toggle('open');
     updateMenuState();
   },
-  false
+  false,
 );
 
-// Auto-open menu after delay, but not on home page
-if (!window.location.pathname.endsWith('index.html') && window.location.pathname !== '/') {
+// Auto-open menu after delay, but not on home page or paper pages
+if (
+  !window.location.pathname.endsWith('index.html') &&
+  window.location.pathname !== '/' &&
+  !window.location.pathname.includes('/papers/')
+) {
   setTimeout(function () {
     nav.classList.toggle('open');
     updateMenuState();
