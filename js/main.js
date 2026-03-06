@@ -56,8 +56,11 @@ toggle.addEventListener(
   false
 );
 
-setTimeout(function () {
-  nav.classList.toggle('open');
-  updateMenuState();
-}, 800);
+// Auto-open menu after delay, but not on home page
+if (!window.location.pathname.endsWith('index.html') && window.location.pathname !== '/') {
+  setTimeout(function () {
+    nav.classList.toggle('open');
+    updateMenuState();
+  }, 800);
+}
 //end menu
