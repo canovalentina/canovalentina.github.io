@@ -913,8 +913,8 @@ body.dark-mode .paper-content blockquote {
 .sensitive-image img {
   display: block;
   height: auto;
-  filter: blur(18px);
-  opacity: 0.5;
+  filter: blur(10px);
+  opacity: 0.4;
   transition:
     filter 0.3s ease,
     opacity 0.3s ease,
