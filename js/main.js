@@ -68,3 +68,33 @@ if (
   }, 800);
 }
 //end menu
+
+// Sensitive images: click/keyboard to reveal
+const sensitiveImages = document.querySelectorAll('.sensitive-image');
+
+if (sensitiveImages.length) {
+  sensitiveImages.forEach(container => {
+    const toggleReveal = () => {
+      const isRevealed = container.classList.toggle('revealed');
+      container.setAttribute('aria-pressed', isRevealed ? 'true' : 'false');
+      container.setAttribute(
+        'aria-label',
+        isRevealed
+          ? 'Sensitive image. Click to hide.'
+          : 'Sensitive image. Click to view.',
+      );
+    };
+
+    container.addEventListener('click', event => {
+      event.preventDefault();
+      toggleReveal();
+    });
+
+    container.addEventListener('keydown', event => {
+      if (event.key === 'Enter' || event.key === ' ') {
+        event.preventDefault();
+        toggleReveal();
+      }
+    });
+  });
+}
