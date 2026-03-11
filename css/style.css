@@ -807,6 +807,7 @@ body.dark-mode .dark-mode-toggle .toggle-option.active {
 /* Paper content styles */
 .paper-content {
   margin-top: 1.5rem;
+  font-size: 0.875rem;
 }
 
 .paper-content h1 {
@@ -832,6 +833,7 @@ body.dark-mode .paper-content .paper-subtitle {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   margin-left: 0;
+  line-height: 1.4;
 }
 
 .paper-content h3 {
@@ -860,9 +862,18 @@ body.dark-mode .paper-content .content-warning {
 }
 
 .paper-content p {
+  font-size: inherit;
   margin-left: 0;
   margin-bottom: 1rem;
   line-height: 1.6;
+}
+
+.paper-content ol,
+.paper-content ul,
+.paper-content li,
+.paper-content blockquote {
+  font-size: inherit;
+  line-height: 1.4;
 }
 
 .paper-content blockquote {
