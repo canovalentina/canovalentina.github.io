@@ -391,8 +391,8 @@ body.dark-mode .tag-action {
 }
 
 body.dark-mode .tag-action:hover {
-  background: rgba(255, 99, 71, 0.3);
-  color: tomato;
+  background: rgba(99, 102, 184, 0.35);
+  color: #b8bbee;
 }
 
 a:hover .icon,
