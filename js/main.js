@@ -56,7 +56,8 @@ toggle.addEventListener(
   false,
 );
 
-// Auto-open menu after delay, but not on home page or paper pages
+// Inner pages load with the menu open; collapse it after a short delay.
+// Skipped on the home page and paper pages, where the menu starts closed.
 if (
   !window.location.pathname.endsWith('index.html') &&
   window.location.pathname !== '/' &&

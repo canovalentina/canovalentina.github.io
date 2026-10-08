@@ -36,6 +36,14 @@
     />
   </head>
   <body>
+    <script>
+      // Apply saved dark mode before the page paints (avoids a white flash)
+      try {
+        if (localStorage.getItem('darkMode') === 'true') {
+          document.body.classList.add('dark-mode');
+        }
+      } catch (e) {}
+    </script>
     <a class="skip-link" href="#main">Skip to content</a>
     <!-- Menu. Credit to: https://codepen.io/the_mai10*/ -->
     <nav class="top-right open" aria-label="Main navigation">
@@ -48,7 +56,7 @@
       <a class="disc l4" href="projects.html">
         <div>projects</div>
       </a>
-      <a class="disc l5 toggle" aria-expanded="true"> menu </a>
+      <button type="button" class="disc l5 toggle" aria-expanded="true">menu</button>
     </nav>
     <!-- end menu -->
 
